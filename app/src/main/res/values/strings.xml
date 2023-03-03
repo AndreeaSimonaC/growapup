@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">GrowAPup</string>
+    <string name="let_s_raise_the_puppy_together">Lets raise the puppy together!</string>
+    <string name="start">START</string>
+    <string name="the_best_way_to_take_care_of_your_furry_friend">The best way to take care of your furry friend.</string>
+    <string name="it_s_time_to">"Its time to:"</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="login">LOGIN</string>
+    <string name="or">or</string>
+    <string name="welcome_to_grow_a_pup">Welcome to Grow-A-Pup!</string>
+    <string name="you_will_learn_about_dog_nutrition_training_health_and_wellness_and_track_your_furry_friend_s_progress_as_they_grow_and_develop">You will learn about dog nutrition, training, health and wellness, and track your furry friend\'s progress as they grow and develop.</string>
+
+    <style name="gagalina">
+        <item name="android:fontFamily">@font/gagalina</item>
+    </style>
+
+    <style name="hertical">
+        <item name="android:fontFamily">@font/hertical</item>
+    </style>
+
+    <style name="montserrat">
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="montserratbold">
+        <item name="android:fontFamily">@font/montserratbold</item>
+    </style>
+</resources>
