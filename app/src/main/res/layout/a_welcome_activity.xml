@@ -9,11 +9,12 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="414dp"
-        android:layout_height="734dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:contentDescription="@string/app_name"
         android:src="@drawable/background"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
@@ -31,6 +32,10 @@
         android:gravity="center"
         android:text="@string/let_s_raise_the_puppy_together"
         android:textColor="#fffaef"
+        android:shadowColor="#000000"
+        android:shadowDx="7"
+        android:shadowDy="1"
+        android:shadowRadius="1"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,13 +99,13 @@
         tools:ignore="MissingConstraints" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/startButton"
         style="@style/montserrat"
         android:layout_width="190dp"
         android:layout_height="63dp"
-        android:background="@drawable/button_orange"
-        android:backgroundTint="@color/orange"
+        android:background="@drawable/button_shadow_orange"
+
         android:elevation="25sp"
         android:padding="10dp"
         android:shadowColor="#000000"

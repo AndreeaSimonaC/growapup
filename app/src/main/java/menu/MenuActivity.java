@@ -41,7 +41,7 @@ public class MenuActivity extends AppCompatActivity {
                         }
                 });
 
-                calendarButton = findViewById(R.id.nutritionButton);
+                calendarButton = findViewById(R.id.calendarButton);
                 calendarButton.setOnClickListener(new View.OnClickListener() {
 
                         @Override

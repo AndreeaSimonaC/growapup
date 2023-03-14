@@ -9,16 +9,18 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="408dp"
-        android:layout_height="733dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:contentDescription="@string/app_name"
         android:src="@drawable/background"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -29,7 +31,10 @@
         android:gravity="center"
         android:text="@string/let_s_raise_the_puppy_together"
         android:textColor="#fffaef"
-
+        android:shadowColor="#000000"
+        android:shadowDx="7"
+        android:shadowDy="1"
+        android:shadowRadius="1"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,6 +52,10 @@
         android:gravity="center"
         android:text="@string/it_s_time_to"
         android:textColor="#fffaef"
+        android:shadowColor="#000000"
+        android:shadowDx="7"
+        android:shadowDy="1"
+        android:shadowRadius="1"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,13 +81,13 @@
         tools:ignore="MissingConstraints" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signUpButton"
         style="@style/montserratbold"
         android:layout_width="190dp"
         android:layout_height="63dp"
-        android:background="@drawable/button_orange"
-        android:backgroundTint="#fd975f"
+        android:background="@drawable/button_shadow_orange"
+
         android:elevation="25sp"
         android:padding="10dp"
         android:text="@string/sign_up"
@@ -114,13 +123,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.623" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginButton"
         style="@style/montserratbold"
         android:layout_width="190dp"
         android:layout_height="63dp"
-        android:background="@drawable/button_orange"
-        android:backgroundTint="#fd975f"
+        android:background="@drawable/button_shadow_orange"
+
         android:elevation="25sp"
         android:padding="10dp"
         android:text="@string/login"

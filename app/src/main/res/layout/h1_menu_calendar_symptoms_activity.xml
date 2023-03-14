@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#298DAE"
+    tools:context="menu.SymptomsActivity">
+
+    <ImageView
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="425dp"
+        android:layout_height="83dp"
+        android:background="@drawable/rectangle_shape"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addCalendarActivity"
+        style="@style/montserratbold"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="132dp"
+        android:background="@drawable/rounded_edittext_background"
+
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Add Activity"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.184" />
+    <TextView
+        android:id="@+id/textCalendar"
+        style="@style/montserratbold"
+        android:layout_width="178dp"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="Calendar"
+        android:textColor="#DCD9D4"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <ImageView
+        android:id="@+id/calendar"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/calendaricon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backToCalendarButton"
+
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/backbutton"
+        android:elevation="25sp"
+        android:padding="10dp"
+        android:shadowColor="#000000"
+        android:shadowDx="7"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        tools:targetApi="lollipop" />
+
+
+
+    <ScrollView     android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="700dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/activeIconButton"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/active_icon"
+                android:elevation="25sp"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="7"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+
+
+                android:text="Groomer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.048"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.212"
+                tools:targetApi="lollipop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/activeIconButton2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/active_icon"
+                android:elevation="25sp"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="7"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.665"
+                tools:targetApi="lollipop" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/activeIconButton3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/active_icon"
+                android:elevation="25sp"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="7"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.67"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.978"
+                tools:targetApi="lollipop" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

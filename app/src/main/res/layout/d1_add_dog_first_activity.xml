@@ -9,11 +9,12 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="414dp"
-        android:layout_height="734dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:contentDescription="@string/app_name"
         android:src="@drawable/background"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
@@ -32,6 +33,10 @@
         android:text="Time to start\nthe journey"
         android:textColor="#fffaef"
         android:textSize="35sp"
+        android:shadowColor="#000000"
+        android:shadowDx="7"
+        android:shadowDy="1"
+        android:shadowRadius="1"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,13 +62,13 @@
         tools:ignore="MissingConstraints" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/addYourDogButton"
         style="@style/montserrat"
         android:layout_width="358dp"
         android:layout_height="88dp"
-        android:background="@drawable/button_orange"
-        android:backgroundTint="#FF9860"
+        android:background="@drawable/button_shadow_orange"
+
         android:elevation="25sp"
         android:padding="10dp"
         android:shadowColor="#000000"

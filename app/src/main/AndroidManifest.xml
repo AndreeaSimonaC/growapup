@@ -129,6 +129,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="menu.SymptomsActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.START" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
