@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "116621083515",
+    "project_id": "growapup",
+    "storage_bucket": "growapup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116621083515:android:473051c461d76364e273de",
+        "android_client_info": {
+          "package_name": "com.example.apptest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116621083515-t5ak3ranapsa3u5p82atqraojvj8cu54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApruA-49bWM2OgSpj7wNf3LHXbPmY0dQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116621083515-t5ak3ranapsa3u5p82atqraojvj8cu54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

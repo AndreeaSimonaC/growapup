@@ -34,6 +34,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/addCalendarActivity"
         style="@style/montserratbold"
@@ -50,6 +51,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout"
         app:layout_constraintVertical_bias="0.184" />
+
     <TextView
         android:id="@+id/textCalendar"
         style="@style/montserratbold"
@@ -89,7 +91,7 @@
 
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:background="@drawable/backbutton"
+        android:background="@drawable/backbutton_orange"
         android:elevation="25sp"
         android:padding="10dp"
         android:shadowColor="#000000"
@@ -106,39 +108,201 @@
 
 
 
-    <ScrollView     android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <View
                 android:layout_width="match_parent"
-                android:layout_height="700dp" />
+                android:layout_height="150dp" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:id="@+id/buttonContainer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/activeIconButton"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:background="@drawable/active_icon"
-                android:elevation="25sp"
-                android:padding="10dp"
-                android:shadowColor="#000000"
-                android:shadowDx="7"
-                android:shadowDy="1"
-                android:shadowRadius="1"
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/activeIconButton"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/active_icon"
+                        android:elevation="25sp"
+                        android:padding="10dp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="7"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.048"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.212"
+                        tools:targetApi="lollipop" />
+                    <TextView
+                        android:id="@+id/groomerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activeIconButton"
+                        android:text="Groomer"
+                        style="@style/montserratbold"
+                        android:textColor="#DCD9D4"
+                        android:textSize="15sp" />
+                </RelativeLayout>
 
+                <RelativeLayout
+                    android:id="@+id/vetButtonAppointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@id/vetButtonAppointment"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/vet_icon"
+                        android:elevation="25sp"
+                        android:padding="10dp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="7"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.048"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.212"
+                        tools:targetApi="lollipop" />
+                    <TextView
+                        android:id="@+id/vetText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vetButtonAppointment"
+                        android:text="Vet"
+                        style="@style/montserratbold"
+                        android:textColor="#DCD9D4"
+                        android:textSize="15sp" />
+                </RelativeLayout>
 
-                android:text="Groomer"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.048"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.212"
-                tools:targetApi="lollipop" />
+                <RelativeLayout
+                    android:id="@+id/buttonContainer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/activeIconButton"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/vaccine_icon"
+                        android:elevation="25sp"
+                        android:padding="10dp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="7"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.048"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.212"
+                        tools:targetApi="lollipop" />
+                    <TextView
+                        android:id="@+id/vaccineText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activeIconButton"
+                        android:text="Vaccine"
+                        style="@style/montserratbold"
+                        android:textColor="#DCD9D4"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/buttonContainer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/activeIconButton"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/training_class_icon"
+                        android:elevation="25sp"
+                        android:padding="10dp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="7"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.048"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.212"
+                        tools:targetApi="lollipop" />
+                    <TextView
+                        android:id="@+id/trainingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activeIconButton"
+                        android:text="Training"
+                        style="@style/montserratbold"
+                        android:textColor="#DCD9D4"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/buttonContainer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/activeIconButton"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/training_class_icon"
+                        android:elevation="25sp"
+                        android:padding="10dp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="7"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.048"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.212"
+                        tools:targetApi="lollipop" />
+                    <TextView
+                        android:id="@+id/trainingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activeIconButton"
+                        android:text="Training"
+                        style="@style/montserratbold"
+                        android:textColor="#DCD9D4"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            </HorizontalScrollView>
 
             <View
                 android:layout_width="match_parent"
@@ -186,5 +350,6 @@
                 tools:targetApi="lollipop" />
 
         </LinearLayout>
+
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

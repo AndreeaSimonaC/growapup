@@ -101,10 +101,9 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/backToMenuButton"
-
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:background="@drawable/backbutton"
+        android:background="@drawable/backbutton_orange"
         android:elevation="25sp"
         android:padding="10dp"
         android:shadowColor="#000000"
